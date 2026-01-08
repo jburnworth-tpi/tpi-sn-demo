@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: ccmsi
+    description: CCMSI Auto GL Raw Data - Unparsed
+    database: sn_poc
+    schema: public
+    tables:
+      - name: ccmsi_auto_gl
+        description: Raw CCMSI Auto GL Data - Unparsed

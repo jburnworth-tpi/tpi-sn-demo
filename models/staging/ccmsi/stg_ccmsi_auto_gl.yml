@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_ccmsi__ccmsi_auto_gl
+    description: CCMSI Auto GL Raw Data - Unparsed
