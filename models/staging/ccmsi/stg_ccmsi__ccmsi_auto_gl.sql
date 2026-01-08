@@ -78,5 +78,7 @@ RTRIM(SUBSTR(raw_line, 1,12)) AS c_claim_number
 ,RTRIM(SUBSTR(raw_line, 1232,30)) AS Vehicle_Model
 ,RTRIM(SUBSTR(raw_line, 1262,4)) AS Vehicle_Year
 ,RTRIM(SUBSTR(raw_line, 1266,1)) AS Fraudulent_Claim_YN
+,file_name
+,etl_date
 FROM
 cte_ccmsi_auto_gl
