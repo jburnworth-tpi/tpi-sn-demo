@@ -37,7 +37,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   snowedge:
-    marts:
-      materialized: table
-    stagin:
-      materialized: view
+    staging:
+      +materialized: view
