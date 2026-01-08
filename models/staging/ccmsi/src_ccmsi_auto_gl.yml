@@ -8,3 +8,6 @@ sources:
     tables:
       - name: ccmsi_auto_gl
         description: Raw CCMSI Auto GL Data - Unparsed
+      - name: lrs_raw_1g
+        description: Raw 1G LRS Data Demo - Unparsed
+
