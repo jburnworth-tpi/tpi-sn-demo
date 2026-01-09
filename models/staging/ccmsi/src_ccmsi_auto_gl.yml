@@ -8,6 +8,12 @@ sources:
     tables:
       - name: ccmsi_auto_gl
         description: Raw CCMSI Auto GL Data - Unparsed
+ 
+  - name: lrs_sedgewick
+    description: lsr fake data for Sedgewick
+    database: sn_poc
+    schema: lrs
+    tables:
       - name: lrs_raw_1g
         description: Raw 1G LRS Data Demo - Unparsed
 

@@ -1,8 +1,8 @@
 WITH cte_ccmsi_lrs_raw_1g AS (
 SELECT
-*
+*, current_date() as etl_date
 FROM
-{{ source('ccmsi', 'lrs_raw_1g') }}
+{{ source('lrs_sedgewick', 'lrs_raw_1g') }}
 )
 
 SELECT
