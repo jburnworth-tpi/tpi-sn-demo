@@ -6,4 +6,4 @@
 ) }}
 
 select *
-from {{ ref('stg_ccmsi__lrs_raw_1g') }}
+from {{ ref('int_lrs_flattened') }}
