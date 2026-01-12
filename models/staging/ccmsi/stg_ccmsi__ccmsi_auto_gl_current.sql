@@ -3,7 +3,8 @@ SELECT
 *
 FROM
 {{ source('ccmsi', 'ccmsi_auto_gl') }}
-)
+WHERE
+etl_date = (SELECT MAX(etl_date) FROM  {{ source('ccmsi', 'ccmsi_auto_gl') }}))
 
 SELECT
 RTRIM(SUBSTR(raw_line, 1, 12)) AS c_claim_number
@@ -80,5 +81,6 @@ RTRIM(SUBSTR(raw_line, 1, 12)) AS c_claim_number
 ,RTRIM(SUBSTR(raw_line, 1266, 1)) AS Fraudulent_Claim_YN
 ,file_name
 ,etl_date
+,'dummy' AS dummy_column
 FROM
 cte_ccmsi_auto_gl
