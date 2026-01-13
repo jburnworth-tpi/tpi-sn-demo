@@ -39,3 +39,10 @@ models:
   snowedge:
     staging:
       +materialized: view
+    intermediate:
+      +materialized: table
+      +transient: false
+
+    iceberg:
+      +materialized: table
+      +transient: false
