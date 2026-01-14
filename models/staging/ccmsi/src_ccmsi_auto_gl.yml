@@ -10,4 +10,3 @@ sources:
         description: Raw CCMSI Auto GL Data - Unparsed
       - name: lrs_raw_1g
         description: Raw 1G LRS Data Demo - Unparsed
-
